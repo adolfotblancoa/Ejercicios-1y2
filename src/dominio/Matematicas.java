@@ -22,4 +22,17 @@ public class Matematicas {
             return n*factorial_n(n-1);
         }
     }
+
+    //ejercicio2.3
+    // 3. La potencia n-ésima de un número natural
+    public static long potencia_n(int base, int exp){
+        if(exp==0){
+            return 1;
+        } else {
+            return base*potencia_n(base, exp-1);
+        }
+    }
+
+    //ejercicio2.4
+    // 4. La suma de los elementos de una lista de números
     }

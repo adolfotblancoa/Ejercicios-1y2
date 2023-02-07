@@ -5,6 +5,7 @@ import src.dominio.Matematicas;
 public class Principal {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
+        //ejer 1
         System.out.println("Ejercicio 1 : Explique qué es un método recursivo\nR: Un método recursivo es una técnica de programación en la que una función se llama a sí misma para resolver un problema en partes más pequeñas. La función se va llamando a sí misma hasta que se alcanza un caso base o condición de parada, que detiene la recursión y devuelve un resultado.\n");
         //Programe las siguientes funciones mediante métodos recursivos:
         //ejer 2.1
@@ -15,7 +16,13 @@ public class Principal {
         System.out.println("Ejercicio 2.2: El factorial de un numero\nIntroduzca el valor de n: ");
         int n2 = sc.nextInt();
         System.out.println("El resultado es: "+Matematicas.factorial_n(n2)+"\n");
-
+        //ejer 2.3
+        System.out.println("Ejercicio 2.3: Potencia n-esima de un natural\nIntroduzca el numero natural: ");
+        int nat = sc.nextInt();
+        System.out.println("Introduzca la potencia: ");
+        int pot = sc.nextInt();
+        System.out.println("El resultado es : "+Matematicas.potencia_n(nat, pot)+"\n");
+        
     }
     
 }
