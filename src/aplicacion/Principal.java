@@ -22,7 +22,27 @@ public class Principal {
         System.out.println("Introduzca la potencia: ");
         int pot = sc.nextInt();
         System.out.println("El resultado es : "+Matematicas.potencia_n(nat, pot)+"\n");
+        //ejer 2.4
+        System.out.println("Ejercicio 2.4: La suma de los elementos de una lista de números enteros\nIntroduzca la longitud de la lista: ");
+        int lon = sc.nextInt();
+        int[] lista = new int[lon];
+        for(int i=0; i<lon; i++){
+            System.out.println("Introduzca el elemento "+(i+1)+": ");
+            lista[i] = sc.nextInt();
+        }
+        System.out.println("El resultado es: "+Matematicas.suma_lista(lista)+"\n");
+        //ejer 2.5
+        System.out.println("Ejercicio 2.5: La media aritmética de una lista de números\nIntroduzca la longitud de la lista: ");
+        int lon2 = sc.nextInt();
+        int[] lista2 = new int[lon2];
+        for(int i=0; i<lon2; i++){
+            System.out.println("Introduzca el elemento "+(i+1)+": ");
+            lista2[i] = sc.nextInt();
+        }
+        System.out.println("El resultado es: "+Matematicas.media_lista(lista2)+"\n");
+        //ejer 2.6
         
+
     }
     
 }

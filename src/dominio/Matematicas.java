@@ -1,4 +1,5 @@
 package src.dominio;
+import java.util.Arrays;
 
 public class Matematicas {
     
@@ -34,5 +35,22 @@ public class Matematicas {
     }
 
     //ejercicio2.4
-    // 4. La suma de los elementos de una lista de números
+    // 4. La suma de los elementos de una lista de números enteros
+    public static int suma_lista(int[] lista){
+        if(lista.length==0){
+            return 0;
+        } else {
+            return lista[0]+suma_lista(Arrays.copyOfRange(lista, 1, lista.length));
+        }
     }
+
+    //ejercicio2.5
+    // 5. La media aritmética de una lista de números
+    public static int media_lista(int[] lista){
+        if(lista.length==0){
+            return 0;
+        } else {
+            return (lista[0]+media_lista(Arrays.copyOfRange(lista, 1, lista.length))/lista.length);
+        }
+    }
+}
