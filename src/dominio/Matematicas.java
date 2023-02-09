@@ -1,5 +1,6 @@
 package src.dominio;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Matematicas {
     
@@ -87,11 +88,16 @@ public class Matematicas {
     }
 
     //ejercicio2.9
-    // * 9. Dada una lista de números naturales mayores o iguales que 2, 
-    // obtiene otra lista con los números pares de la lista inicial, 
-    // en el mismo orden y respetando los números repetidos
-    public static int[] pares_lista(int[] lista){
-        return pares_lista(lista);
+    /*  9. Dada una lista de números naturales mayores o iguales que 2, 
+    obtiene otra lista con los números pares de la lista inicial, 
+    en el mismo orden y respetando los números repetidos */
+    public static ArrayList<Integer>pares_lista(int[] lista, ArrayList<Integer> lista_pares){
+        if(lista.length==0){
+            return lista_pares;
+        }else if(lista[0]%2==0){
+            lista_pares.add(lista[0]);
+        }
+        return pares_lista(Arrays.copyOfRange(lista, 1, lista.length), lista_pares);
     }
 
 }

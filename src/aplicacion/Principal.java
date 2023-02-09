@@ -1,4 +1,5 @@
 package src.aplicacion;
+import java.util.ArrayList;
 import java.util.Scanner;
 import src.dominio.Matematicas;
 
@@ -90,8 +91,9 @@ public class Principal {
             System.out.println("Introduzca el elemento "+(i+1)+": ");
             lista5[i] = sc.nextInt();
         }
-        System.out.println("El resultado es: "+Matematicas.pares_lista(lista5)+"\n");
-        break;
+        ArrayList<Integer> lista_pares = new ArrayList<Integer>();
+        System.out.println("El resultado es: "+Matematicas.pares_lista(lista5,lista_pares)+"\n");
+
     
     }
 
