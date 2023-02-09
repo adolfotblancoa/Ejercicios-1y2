@@ -73,4 +73,25 @@ public class Matematicas {
             return n+suma_pares(n-2);
         }else return suma_pares(n-1);
     }
+
+    //ejercicio2.8
+    // 8. La suma de los elementos pares de una lista de enteros
+    public static int suma_pares_lista(int[] lista){
+        if(lista.length==0){
+            return 0;
+        }else if (lista[0]%2==0){
+            return lista[0]+suma_pares_lista(Arrays.copyOfRange(lista, 1, lista.length));
+        }else{
+        return suma_pares_lista(Arrays.copyOfRange(lista, 1, lista.length));
+        }
+    }
+
+    //ejercicio2.9
+    // * 9. Dada una lista de números naturales mayores o iguales que 2, 
+    // obtiene otra lista con los números pares de la lista inicial, 
+    // en el mismo orden y respetando los números repetidos
+    public static int[] pares_lista(int[] lista){
+        return pares_lista(lista);
+    }
+
 }

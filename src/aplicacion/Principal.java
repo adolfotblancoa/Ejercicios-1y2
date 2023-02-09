@@ -70,6 +70,28 @@ public class Principal {
         int n3 = sc.nextInt();
         System.out.println("El resultado es: "+Matematicas.suma_pares(n3)+"\n");
         break;
+        //ejer 2.8
+        case 8:
+        System.out.println("Ejercicio 2.8: La suma de los elementos pares de una lista de enteros\nIntroduzca la longitud de la lista: ");
+        int lon4 = sc.nextInt();
+        int[] lista4 = new int[lon4];
+        for(int i=0; i<lon4; i++){
+            System.out.println("Introduzca el elemento "+(i+1)+": ");
+            lista4[i] = sc.nextInt();
+        }
+        System.out.println("El resultado es: "+Matematicas.suma_pares_lista(lista4)+"\n");
+        break;
+        //ejer 2.9
+        case 9:
+        System.out.println(" Dada una lista de números naturales mayores o iguales que 2, obtiene otra lista con los números pares de la lista inicial, en el mismo orden y respetando los números repetidos.\nIntroduzca la longitud de la lista: ");
+        int lon5 = sc.nextInt();
+        int[] lista5 = new int[lon5];
+        for(int i=0; i<lon5; i++){
+            System.out.println("Introduzca el elemento "+(i+1)+": ");
+            lista5[i] = sc.nextInt();
+        }
+        System.out.println("El resultado es: "+Matematicas.pares_lista(lista5)+"\n");
+        break;
     
     }
 
