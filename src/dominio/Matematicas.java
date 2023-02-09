@@ -100,4 +100,15 @@ public class Matematicas {
         return pares_lista(Arrays.copyOfRange(lista, 1, lista.length), lista_pares);
     }
 
+    //ejercicio2.10
+    // 10. La lista de los primeros números pares hasta n asumiendo n ≥ 2
+    public static ArrayList<Integer> primeros_pares(int n, ArrayList<Integer> lista_pares){
+        if(n<2){
+            return lista_pares;
+        }else if (n%2==0){
+            lista_pares.add(n);
+        }
+        return primeros_pares(n-1, lista_pares);
+    }
+
 }
