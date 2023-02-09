@@ -111,4 +111,10 @@ public class Matematicas {
         return primeros_pares(n-1, lista_pares);
     }
 
+    //ejercicio2.11
+    // 11. Producto escalar de dos listas de números no vacías y del mismo tamaño
+    public static int producto_escalar(int[] lista1, int[] lista2){
+    return 0;
+    }
+
 }
