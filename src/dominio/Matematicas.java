@@ -53,4 +53,24 @@ public class Matematicas {
             return (lista[0]+media_lista(Arrays.copyOfRange(lista, 1, lista.length))/lista.length);
         }
     }
+
+    //ejercicio2.6
+    // 6. La desviación típica de una lista de números
+    public static double desviacion_tipica(int[] lista){
+        if(lista.length==0){
+            return 0;
+        } else {
+            return Math.sqrt((Math.pow(lista[0]-media_lista(lista), 2)+desviacion_tipica(Arrays.copyOfRange(lista, 1, lista.length)))/lista.length);
+        }
+    }
+
+    //ejercicio2.7
+    // 7. La suma de los primeros números pares hasta n asumiendo n ≥ 2
+    public static int suma_pares(int n){
+        if(n<2){
+            return 0;
+        }else if (n%2==0){
+            return n+suma_pares(n-2);
+        }else return suma_pares(n-1);
+    }
 }
