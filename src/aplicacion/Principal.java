@@ -117,7 +117,12 @@ public class Principal {
             }
             System.out.println("El resultado es: "+Matematicas.producto_escalar(lista11_1,lista11_2)+"\n");
             break;
-        
+        //ejer 2.12
+        case 12:
+            System.out.println("Ejercicio 2.12: El elemento n-ésimo de la sucesión de Fibonacci. \nIntroduzca el valor de n: ");
+            int n12 = sc.nextInt();
+            System.out.println("El resultado es: "+Matematicas.n_fibonacci(n12)+"\n");
+            break;
     
     }
 

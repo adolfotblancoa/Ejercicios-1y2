@@ -51,7 +51,7 @@ public class Matematicas {
         if(lista.length==0){
             return 0;
         } else {
-            return (lista[0]+media_lista(Arrays.copyOfRange(lista, 1, lista.length))/lista.length);
+            return suma_lista(lista)/lista.length;
         }
     }
 
@@ -113,8 +113,18 @@ public class Matematicas {
 
     //ejercicio2.11
     // 11. Producto escalar de dos listas de números no vacías y del mismo tamaño
-    public static int producto_escalar(int[] lista1, int[] lista2){
-    return 0;
+    public static int producto_escalar(int []lista1, int []lista2){
+        if(lista1.length!=lista2.length || lista1.length==0 && lista2.length==0){
+            return 0;
+        }else{
+        return (lista1[0]*lista2[0])+producto_escalar(Arrays.copyOfRange(lista1, 1, lista1.length), Arrays.copyOfRange(lista2, 1, lista2.length));
+        }
+    }
+    //ejercicio2.12
+    // 12. El elemento n-ésimo de la sucesión de Fibonacci
+    public static int n_fibonacci(int n){
+        return 0;
     }
 
 }
+
