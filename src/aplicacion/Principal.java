@@ -8,7 +8,24 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
         //ejer 1
         System.out.println("Ejercicio 1. Explique qué es un método recursivo\nR: Un método recursivo es una técnica de programación en la que una función se llama a sí misma para resolver un problema en partes más pequeñas. La función se va llamando a sí misma hasta que se alcanza un caso base o condición de parada, que detiene la recursión y devuelve un resultado.\n");
-        System.out.println("Ejercicio 2. Programe las siguientes funciones mediante métodos recursivos: ");
+        System.out.println("Ejercicio 2. Programe las siguientes funciones mediante métodos recursivos: \n");
+        System.out.println("Ejercicio 2.1: La suma 0 + 1 + 2 + 3 + ... + n");
+        System.out.println("Ejercicio 2.2: El factorial de un número n");
+        System.out.println("Ejercicio 2.3: La potencia n-esima de un número");
+        System.out.println("Ejercicio 2.4: La suma de los elementos de una lista de números enteros");
+        System.out.println("Ejercicio 2.5: La media aritmética de una lista de números");
+        System.out.println("Ejercicio 2.6: La desviación típica de una lista de números");
+        System.out.println("Ejercicio 2.7: La suma de los primeros números pares hasta n asumiendo n ≥ 2");
+        System.out.println("Ejercicio 2.8: La suma de los elementos pares de una lista de enteros");
+        System.out.println("Ejercicio 2.9: Dada una lista de números naturales mayores o iguales que 2, obtiene otra lista con los números pares de la lista inicial, en el mismo orden y respetando los números repetidos.");
+        System.out.println("Ejercicio 2.10: La lista de los primeros números pares hasta n asumiendo n ≥ 2");
+        System.out.println("Ejercicio 2.11: Producto escalar de dos listas de números no vacías y del mismo tamaño.");
+        System.out.println("Ejercicio 2.12: El elemento n-ésimo de la sucesión de Fibonacci.");
+        System.out.println("Ejercicio 2.13: Calcule el cociente entre el decimo tercer y el decimo segundo elemento de la sucesión de Fibonacci, y compare el resultado con (1+√5)/2.");
+        System.out.println("Ejercicio 2.14: Averigüe la relación entre la sucesión de Fibonacci y la razón áurea");
+        System.out.println("\n0. Salir");
+        boolean salir = false;
+        do{
         System.out.println("Introduzca el numero de apartado que desea ejecutar (1-14): ");
         int apartado = sc.nextInt();
         switch(apartado){
@@ -84,7 +101,7 @@ public class Principal {
             break;
         //ejer 2.9
         case 9:
-            System.out.println(" Dada una lista de números naturales mayores o iguales que 2, obtiene otra lista con los números pares de la lista inicial, en el mismo orden y respetando los números repetidos.\nIntroduzca la longitud de la lista: ");
+            System.out.println("Ejercicio 2.9: Dada una lista de números naturales mayores o iguales que 2, obtiene otra lista con los números pares de la lista inicial, en el mismo orden y respetando los números repetidos.\nIntroduzca la longitud de la lista: ");
             int lon9 = sc.nextInt();
             int[] lista9 = new int[lon9];
             for(int i=0; i<lon9; i++){
@@ -123,10 +140,23 @@ public class Principal {
             int n12 = sc.nextInt();
             System.out.println("El resultado es: "+Matematicas.n_fibonacci(n12)+"\n");
             break;
-    
-    }
+        
+        //ejer 2.13
 
 
+        case 0:
+            System.out.println("Adios.\n");
+            salir = true;
+            break;
+
+        default:
+            System.out.println("Opción incorrecta. Introduzca un numero entre 1 y 14.\n");
+            break;
+
+        }
+
+        }while (!salir);
+
     }
-    
+
 }

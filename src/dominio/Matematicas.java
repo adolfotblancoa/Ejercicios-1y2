@@ -114,17 +114,50 @@ public class Matematicas {
     //ejercicio2.11
     // 11. Producto escalar de dos listas de números no vacías y del mismo tamaño
     public static int producto_escalar(int []lista1, int []lista2){
-        if(lista1.length!=lista2.length || lista1.length==0 && lista2.length==0){
+        if(lista1.length!=lista2.length || (lista1.length==0 && lista2.length==0)){
             return 0;
         }else{
         return (lista1[0]*lista2[0])+producto_escalar(Arrays.copyOfRange(lista1, 1, lista1.length), Arrays.copyOfRange(lista2, 1, lista2.length));
         }
     }
+
     //ejercicio2.12
     // 12. El elemento n-ésimo de la sucesión de Fibonacci
     public static int n_fibonacci(int n){
+        if(n==0){
         return 0;
+        }else{
+            ArrayList<Integer> fibonacci = new ArrayList<Integer>(n);
+            int x = 0;
+            int y = 1;
+            for(int i = 0; i < n; i+=1, x = x + y, y = y + x){
+                fibonacci.add(x);
+                fibonacci.add(y);                
+            }
+            return fibonacci.get(n-1);
+        }
+        
     }
-
 }
 
+
+/*  
+  }else{
+            ArrayList<Integer> fibonacci = new ArrayList<Integer>(n);
+            int x = 0;
+            int y = 1;
+            for(int i = 0; i < n/2; n+=1, x = x + y, y = y + x){
+                fibonacci.add(x);
+                fibonacci.add(y);                
+            }
+            return fibonacci.get(n) + n_fibonacci(n-1);
+        }
+ */
+
+ /* 
+  else if(n==1){
+            return 1;
+        }else{
+             return n_fibonacci(n-1)+n_fibonacci(n-2);
+        }
+  */
