@@ -24,7 +24,7 @@ public class Principal {
         System.out.println("Ejercicio 2.12: El elemento n-ésimo de la sucesión de Fibonacci.");
         System.out.println("Ejercicio 2.13: Calcule el cociente entre el decimo tercer y el decimo segundo elemento de la sucesión de Fibonacci, y compare el resultado con (1+√5)/2.");
         System.out.println("Ejercicio 2.14: Averigüe la relación entre la sucesión de Fibonacci y la razón áurea");
-        System.out.println("\n0. Salir");
+        System.out.println("\n0: Salir");
         boolean salir = false;
         do{
         System.out.println("Introduzca el numero de apartado que desea ejecutar (1-14): ");
@@ -145,11 +145,12 @@ public class Principal {
         //ejer 2.13
         case 13:
             System.out.println("Ejercicio 2.13: Ejercicio 2.13: Calcule el cociente entre el decimo tercer y el decimo segundo elemento de la sucesión de Fibonacci, y compare el resultado con (1+√5)/2.");
-            System.out.println("El resultado es: "+Matematicas.cociente_fibonacci()+"\n");
+            System.out.println("El resultado del cociente es: "+Matematicas.cociente_fibonacci()+"\n");
             break;
         //ejer 2.14
         case 14:
-            System.out.println("Averigüe la relación entre la sucesión de Fibonacci y la razón áurea");
+            System.out.println("Ejercicio 2.14: Averigüe la relación entre la sucesión de Fibonacci y la razón áurea");
+            System.out.println("R: La razón entre dos números consecutivos de Fibonacci tiende a la razón áurea cuando los números son lo suficientemente grandes. De hecho, esta razón es igual a la razón áurea φ aproximadamente a medida que la sucesión crece, es decir: \nlim (n→∞) Fn₊₁/Fn = φ, \ndonde Fn es el n-ésimo término de la sucesión de Fibonacci y φ es la razón áurea.");
             break;
 
         case 0:

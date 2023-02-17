@@ -1,6 +1,7 @@
 package src.dominio;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.lang.Math;
 
 public class Matematicas {
     
@@ -126,15 +127,10 @@ public class Matematicas {
     public static int n_fibonacci(int n){
         if(n==0){
         return 0;
+        }else if(n==1){
+            return 1;
         }else{
-            ArrayList<Integer> fibonacci = new ArrayList<Integer>(n);
-            int x = 0;
-            int y = 1;
-            for(int i = 0; i < n; i+=1, x = x + y, y = y + x){
-                fibonacci.add(x);
-                fibonacci.add(y);                
-            }
-            return fibonacci.get(n-1);
+             return n_fibonacci(n-1)+n_fibonacci(n-2);
         }
         
     }
@@ -142,29 +138,9 @@ public class Matematicas {
     //ejercicio2.13
     // 13. Calcule el cociente entre el decimo tercer y el decimo segundo elemento de la sucesión de Fibonacci, y compare el resultado con (1+√5)/2
     public static double cociente_fibonacci(){
+        double x = (1+Math.sqrt(5))/2;
+        System.out.println("El resultado de 1 + la raiz cuadrada de 5 entre 2 es: "+x);
         return (double)n_fibonacci(13)/n_fibonacci(12);
-    }
+        }
 
 }
-
-
-/*  
-  }else{
-            ArrayList<Integer> fibonacci = new ArrayList<Integer>(n);
-            int x = 0;
-            int y = 1;
-            for(int i = 0; i < n/2; n+=1, x = x + y, y = y + x){
-                fibonacci.add(x);
-                fibonacci.add(y);                
-            }
-            return fibonacci.get(n) + n_fibonacci(n-1);
-        }
- */
-
- /* 
-  else if(n==1){
-            return 1;
-        }else{
-             return n_fibonacci(n-1)+n_fibonacci(n-2);
-        }
-  */
