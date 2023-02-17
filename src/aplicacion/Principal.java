@@ -8,6 +8,7 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
         //ejer 1
         System.out.println("Ejercicio 1. Explique qué es un método recursivo\nR: Un método recursivo es una técnica de programación en la que una función se llama a sí misma para resolver un problema en partes más pequeñas. La función se va llamando a sí misma hasta que se alcanza un caso base o condición de parada, que detiene la recursión y devuelve un resultado.\n");
+        //ejer 2
         System.out.println("Ejercicio 2. Programe las siguientes funciones mediante métodos recursivos: \n");
         System.out.println("Ejercicio 2.1: La suma 0 + 1 + 2 + 3 + ... + n");
         System.out.println("Ejercicio 2.2: El factorial de un número n");
@@ -142,7 +143,14 @@ public class Principal {
             break;
         
         //ejer 2.13
-
+        case 13:
+            System.out.println("Ejercicio 2.13: Ejercicio 2.13: Calcule el cociente entre el decimo tercer y el decimo segundo elemento de la sucesión de Fibonacci, y compare el resultado con (1+√5)/2.");
+            System.out.println("El resultado es: "+Matematicas.cociente_fibonacci()+"\n");
+            break;
+        //ejer 2.14
+        case 14:
+            System.out.println("Averigüe la relación entre la sucesión de Fibonacci y la razón áurea");
+            break;
 
         case 0:
             System.out.println("Adios.\n");

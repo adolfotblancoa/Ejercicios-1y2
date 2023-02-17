@@ -138,6 +138,13 @@ public class Matematicas {
         }
         
     }
+
+    //ejercicio2.13
+    // 13. Calcule el cociente entre el decimo tercer y el decimo segundo elemento de la sucesión de Fibonacci, y compare el resultado con (1+√5)/2
+    public static double cociente_fibonacci(){
+        return (double)n_fibonacci(13)/n_fibonacci(12);
+    }
+
 }
 
 
